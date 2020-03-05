@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.calculatrice {
+    background-color: rgb(185, 170, 168);
+    border: 1px solid #ccc;
+    margin: 70px auto;
+    width: 300px;
+}
+
+.ecranCalculatrice {
+    width: 100%;
+    font-size: 4rem;
+    height: 110px;
+    border: none;
+    background-color: rgb(202, 198, 217);
+    color: #333;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    font-size: 25px;
+    color: #333;
+}
+button:hover {
+    background-color: rgb(185, 186, 187);
+    border: rgb(185, 186, 187);
+    color : #333;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.7);
+}    
+button:active {
+    background-color: rgb(167, 168, 168);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.7);
+}
+.toucheEgal:hover {
+    border-color: #2e86c0;
+    background-color: #2e86c0;
+}
+.toucheEgal:active {
+    border-color: hsl(204, 70%, 43%);
+    background-color: hsl(204, 70%, 43%);
+}
+.toucheCalculatrice {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(nombre d'element, taille element); */
+    grid-gap: 2px;
+    padding: 2px;
+}
+
+.operateur {
+    background-color: rgb(230, 224, 235);
+}
+
+.toucheEgal {
+    background-color: hsl(204, 61%, 60%);
+    border-color: hsl(204, 61%, 60%);
+    color: #333;
+    /* grid-area: 5 / 3 / 6 / 5; */
+    /* grid-area: debutRow / debutColumn / finRow / finColumn
+    selon les filets */
+}
+
